@@ -1,4 +1,4 @@
-"""Notebook 00 — environment & data sanity check (no graded tasks)."""
+"""Notebook 00 - environment & data sanity check (no graded tasks)."""
 
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ for name, df in datasets.items():
     print(f"{name:24s} {df.count():>10,} rows")
 '''
 
-PEEK = '''# The raw sales CSV — every column is a string and the data is deliberately messy.
+PEEK = '''# The raw sales CSV - every column is a string and the data is deliberately messy.
 sales_raw = read_sales_raw(spark)
 sales_raw.printSchema()
 sales_raw.show(5, truncate=False)

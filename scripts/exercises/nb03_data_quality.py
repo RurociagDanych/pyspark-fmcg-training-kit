@@ -1,4 +1,4 @@
-"""Notebook 03 — data quality & cleaning."""
+"""Notebook 03 - data quality & cleaning."""
 
 from __future__ import annotations
 

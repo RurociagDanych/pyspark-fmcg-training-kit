@@ -50,7 +50,7 @@ def _adoptium_url() -> str:
             f"Unsupported platform: system={system!r} machine={machine!r}. "
             "Install a JDK 17+ manually and set JAVA_HOME."
         )
-    # Adoptium "latest" redirect — always serves the newest GA build.
+    # Adoptium "latest" redirect - always serves the newest GA build.
     return (
         f"https://api.adoptium.net/v3/binary/latest/{JDK_FEATURE_VERSION}/ga/"
         f"{os_name}/{arch}/jdk/hotspot/normal/eclipse?project=jdk"

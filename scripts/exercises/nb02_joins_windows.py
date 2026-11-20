@@ -1,4 +1,4 @@
-"""Notebook 02 — joins and window functions."""
+"""Notebook 02 - joins and window functions."""
 
 from __future__ import annotations
 

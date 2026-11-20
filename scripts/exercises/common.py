@@ -42,7 +42,7 @@ class Task:
         solution: reference implementation (shown in the solution notebook).
         stub: starter code shown in the exercise notebook.
         check: assertion cell appended after the answer (graded both ways).
-        given: if True, this is provided/demo code, not a task — both notebooks
+        given: if True, this is provided/demo code, not a task - both notebooks
             show ``solution``, no stub or check, and no "Task N" numbering.
     """
 

@@ -1,4 +1,4 @@
-"""Notebook 04 — performance & advanced topics."""
+"""Notebook 04 - performance & advanced topics."""
 
 from __future__ import annotations
 

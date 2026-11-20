@@ -1,8 +1,8 @@
 """Render the exercise definitions into paired exercise + solution notebooks.
 
 For every notebook defined under ``scripts/exercises`` this writes:
-  * ``notebooks/<slug>.ipynb``            — stubs + check cells (for the candidate)
-  * ``notebooks/solutions/<slug>.ipynb``  — filled-in answers + the same checks
+  * ``notebooks/<slug>.ipynb``            - stubs + check cells (for the candidate)
+  * ``notebooks/solutions/<slug>.ipynb``  - filled-in answers + the same checks
 
 Usage::
 
@@ -22,8 +22,6 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from exercises import NOTEBOOKS  # noqa: E402
 from exercises.common import Notebook  # noqa: E402
-
-CHECK_BANNER = "# ✅ CHECK — run this cell to grade your answer\n"
 
 KERNEL_METADATA = {
     "kernelspec": {"name": "python3", "display_name": "Python 3", "language": "python"},
@@ -46,7 +44,7 @@ def _render(notebook: Notebook, *, solution: bool) -> nbf.NotebookNode:
         cells.append(new_markdown_cell(f"## Task {task_no}: {task.title}\n\n{task.prompt}"))
         cells.append(new_code_cell(task.solution if solution else task.stub))
         if task.check:
-            cells.append(new_code_cell(CHECK_BANNER + task.check))
+            cells.append(new_code_cell(task.check))
 
     closing = (
         "---\n🎉 **Solution notebook** — all cells should run top to bottom."

@@ -1,4 +1,4 @@
-"""Notebook 01 — core DataFrame operations."""
+"""Notebook 01 - core DataFrame operations."""
 
 from __future__ import annotations
 

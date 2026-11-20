@@ -83,7 +83,7 @@ def read_dim(spark, name: str):
 def read_sales_raw(spark):
     """Read the raw, deliberately-dirty ``fact_sales`` CSV (all columns string).
 
-    Nothing is cleaned or cast here on purpose — that's the candidate's job.
+    Nothing is cleaned or cast here on purpose - that's the candidate's job.
     """
     return (
         spark.read.option("header", "true")
